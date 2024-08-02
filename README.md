@@ -12,7 +12,6 @@ A package that provides logging utilities for better debugging. For a full featu
 
 ```dart
 void main() {
-void main() {
   Here().debugLog('This is a log!'); // prints: "⚪️ [main] This is a log!"
   Here().debugLogError(
     'This is an error log!',
