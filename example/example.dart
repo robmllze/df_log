@@ -14,23 +14,30 @@ import 'package:df_log/df_log.dart';
 void main() {
   Here().debugLog('This is a log!'); // prints: "⚪️ [main] This is a log!"
   Here().debugLogError(
-      'This is an error log!',); // prints: "🔴 [main] This is an error log!"
+    'This is an error log!',
+  ); // prints: "🔴 [main] This is an error log!"
   Here().debugLogAlert(
-      'This is an alert log!',); // prints: "🟠 [main] This is an alert log!"
+    'This is an alert log!',
+  ); // prints: "🟠 [main] This is an alert log!"
   Here().debugLogIgnore(
-      'This is an ignore log!',); // prints: "🟡 [main] This is an ignore log!"
+    'This is an ignore log!',
+  ); // prints: "🟡 [main] This is an ignore log!"
   Here().debugLogInfo(
-      'This is an info log!',); // prints: "🟣 [main] This is an info log!"
+    'This is an info log!',
+  ); // prints: "🟣 [main] This is an info log!"
   Here().debugLogStart(
-      'This is a start log!',); // prints: "🔵 [main] This is a start log!"
+    'This is a start log!',
+  ); // prints: "🔵 [main] This is a start log!"
   Here().debugLogStop(
-      'This is a stop log!',); // prints: "⚫ [main] This is a stop log!"
+    'This is a stop log!',
+  ); // prints: "⚫ [main] This is a stop log!"
   Here().debugLogSuccess(
-      'This is a success log!',); // prints: "🟢 [main] This is a success log!"
+    'This is a success log!',
+  ); // prints: "🟢 [main] This is a success log!"
 
   printRed(someFunction()); // prints: "someFunction" in red
-  printGreen(anotherFunction()); // prints: "34"
-  printLightPurple('You can also print in other colord!');
+  printGreen(anotherFunction()); // prints: "48"
+  printLightPurple('You can also print in other color!');
 }
 
 String? someFunction() {
@@ -38,5 +45,5 @@ String? someFunction() {
 }
 
 int? anotherFunction() {
-  return Here().lineNumber; // line 34
+  return Here().lineNumber; // this is line 48
 }
