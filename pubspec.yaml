@@ -27,3 +27,6 @@ dependencies:
 dev_dependencies:
   lints: ^4.0.0
   test: ^1.24.0
+  df_generate_dart_indexes:
+    git:
+      url: https://github.com/robmllze/df_generate_dart_indexes
