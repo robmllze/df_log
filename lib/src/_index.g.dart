@@ -8,20 +8,19 @@
 //.title~
 
 // --- PUBLIC FILES ---
-export 'df_log.dart';
-export 'src/here.dart';
-export 'src/print_in_color.dart';
-export 'src/debug_log.dart';
+export 'here.dart';
+export 'print_in_color.dart';
+export 'debug_log.dart';
 
 // --- PRIVATE FILES (EXCLUDED) ---
-// export 'src/_callbacks.dart';
-// export 'src/_function_queue.dart';
-// export 'src/_ansi_styled_string.dart';
-// export 'src/_rec.dart';
-// export 'src/platform/_platform_html.dart';
-// export 'src/platform/_platform_none.dart';
-// export 'src/platform/_platform_io.dart';
-// export 'src/platform/_platform.dart';
+// export '_callbacks.dart';
+// export '_function_queue.dart';
+// export '_ansi_styled_string.dart';
+// export '_rec.dart';
+// export 'platform/_platform_html.dart';
+// export 'platform/_platform_none.dart';
+// export 'platform/_platform_io.dart';
+// export 'platform/_platform.dart';
 
 // --- GENERATED FILES (EXCLUDED) ---
 // None found.
