@@ -9,7 +9,7 @@
 
 name: df_log
 description: A package that provides logging utilities for better debugging.
-version: 0.1.1
+version: 0.1.2
 repository: https://github.com/robmllze/df_log
 
 ## -----------------------------------------------------------------------------
@@ -27,6 +27,3 @@ dependencies:
 dev_dependencies:
   lints: ^4.0.0
   test: ^1.25.8
-  df_generate_dart_indexes:
-    git:
-      url: https://github.com/robmllze/df_generate_dart_indexes
