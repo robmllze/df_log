@@ -54,8 +54,8 @@ class Here {
 
   /// The file name of the file where the Here instance was created.
   String? get fileName {
-    if (this.filePath != null) {
-      final uri = Uri.tryParse(this.filePath!);
+    if (filePath != null) {
+      final uri = Uri.tryParse(filePath!);
       if (uri != null && uri.pathSegments.isNotEmpty) {
         final last = uri.pathSegments.last;
         return '$last.dart';
@@ -85,38 +85,38 @@ class Here {
   //
   //
 
-  Rec get _rec => Rec(this.scope, this.group);
+  Rec get _rec => Rec(scope, group);
 
   //
   //
   //
 
   /// ⚪️ Logs a message to the console.
-  void debugLog(e) => this._rec.debugLog(e);
+  void debugLog(e) => _rec.debugLog(e);
 
   /// 🔴 Logs an error message to the console.
-  void debugLogError(e) => this._rec.debugLogError(e);
+  void debugLogError(e) => _rec.debugLogError(e);
 
   /// 🟠 Logs an alert message to the console.
-  void debugLogAlert(e) => this._rec.debugLogAlert(e);
+  void debugLogAlert(e) => _rec.debugLogAlert(e);
 
   /// 🟡 Logs an ignore message to the console.
-  void debugLogIgnore(e) => this._rec.debugLogIgnore(e);
+  void debugLogIgnore(e) => _rec.debugLogIgnore(e);
 
   /// 🟢 Logs a success message to the console.
-  void debugLogSuccess(e) => this._rec.debugLogSuccess(e);
+  void debugLogSuccess(e) => _rec.debugLogSuccess(e);
 
   /// 🟣 Logs an info message to the console.
-  void debugLogInfo(e) => this._rec.debugLogInfo(e);
+  void debugLogInfo(e) => _rec.debugLogInfo(e);
 
   /// 🟤 Logs a debug message to the console.
-  void debugLogMessage(e) => this._rec.debugLogMessage(e);
+  void debugLogMessage(e) => _rec.debugLogMessage(e);
 
   /// 🔵 Logs a start message to the console.
-  void debugLogStart(e) => this._rec.debugLogStart(e);
+  void debugLogStart(e) => _rec.debugLogStart(e);
 
   /// ⚫ Logs a stop message to the console.
-  void debugLogStop(e) => this._rec.debugLogStop(e);
+  void debugLogStop(e) => _rec.debugLogStop(e);
 
   //
   //

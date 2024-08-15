@@ -1,14 +1,12 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// 🇽🇾🇿 & Dev
-//
-// Copyright Ⓒ Robert Mollentze
-//
-// Licensing details can be found in the LICENSE file in the root directory.
+// Dart/Flutter (DF) Packages by DevCetra.com & contributors. See LICENSE file
+// in root directory.
 //
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
+
 
 import 'package:path/path.dart' as p;
 
@@ -173,7 +171,7 @@ class Rec {
   //
 
   @override
-  String toString() => this.code ?? '???';
+  String toString() => code ?? '???';
 }
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -182,7 +180,7 @@ class RecOptions {
   final Map<String, String> value;
   const RecOptions(this.value);
   RecOptions operator +(RecOptions other) {
-    return RecOptions({...this.value, ...other.value});
+    return RecOptions({...value, ...other.value});
   }
 }
 

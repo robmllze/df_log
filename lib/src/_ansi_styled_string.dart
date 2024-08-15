@@ -19,7 +19,7 @@ class AnsiStyle {
   //
   //
 
-  AnsiStyle(int code) : this._codes = [code];
+  AnsiStyle(int code) : _codes = [code];
 
   //
   //
@@ -33,7 +33,7 @@ class AnsiStyle {
 
   /// Combines two styles into one.
   AnsiStyle operator +(AnsiStyle other) {
-    return AnsiStyle._multiple([...this._codes, ...other._codes]);
+    return AnsiStyle._multiple([..._codes, ...other._codes]);
   }
 
   //
@@ -43,7 +43,7 @@ class AnsiStyle {
   /// Formats the given value with the style.
   String formatted(Object? value) {
     var result = value.toString();
-    for (final code in this._codes) {
+    for (final code in _codes) {
       result = result.withAnsiStyleCode(code);
     }
     return result;

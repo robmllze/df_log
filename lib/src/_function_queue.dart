@@ -55,8 +55,8 @@ class FunctionQueue {
               ]))
                   .first,
     );
-    this._queue.add(q);
-    await this._execute();
+    _queue.add(q);
+    await _execute();
     return q._completer.future;
   }
 
@@ -64,17 +64,17 @@ class FunctionQueue {
   //
   //
 
-  bool get isEmpty => this._queue.isEmpty;
+  bool get isEmpty => _queue.isEmpty;
 
-  bool get isNotEmpty => this._queue.isNotEmpty;
+  bool get isNotEmpty => _queue.isNotEmpty;
 
   //
   //
   //
 
   Future<void> wait() async {
-    if (this.isNotEmpty) {
-      await this.add(() async {});
+    if (isNotEmpty) {
+      await add(() async {});
     }
   }
 
@@ -85,7 +85,7 @@ class FunctionQueue {
   /// Executes the next function in the queue, if the queue is not empty and
   /// no other function is currently running.
   Future<void> _execute() async {
-    for (final l in this._queue
+    for (final l in _queue
       ..removeWhere(
         (e) => e._status == _QueueableStatus.RAN,
       )) {
@@ -95,7 +95,7 @@ class FunctionQueue {
         l._status = _QueueableStatus.RUNNING;
         l._completer.complete(await l._function());
         l._status = _QueueableStatus.RAN;
-        await this._execute();
+        await _execute();
         break;
       }
     }
