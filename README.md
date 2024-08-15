@@ -1,10 +1,11 @@
 # Dart Package Template
 
+<a href="https://www.buymeacoffee.com/robmllze" target="_blank"><img align="right" src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 Dart & Flutter Packages by DevCetra.com & contributors.
 
 [![pub package](https://img.shields.io/pub/v/df_log.svg)](https://pub.dev/packages/df_log)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/robmllze/df_log/main/LICENSE)
-[![Buy Me a Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/robmllze)
 
 ## Summary
 

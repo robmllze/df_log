@@ -1,8 +1,9 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// Dart/Flutter (DF) Packages by DevCetra.com & contributors. See LICENSE file
-// in root directory.
+// Dart/Flutter (DF) Packages by DevCetra.com & contributors. Use of this
+// source code is governed by an MIT-style license that can be found in the
+// LICENSE file.
 //
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
@@ -182,10 +183,8 @@ void _debugLog({
     if (group == null || groups.contains(group)) {
       final colorPath = color != null ? AnsiStyle.italic + color : null;
       final colorTitle = color != null ? AnsiStyle.bold + color : null;
-      final path =
-          (rec?.code != null ? '${rec!.code}' : '').withAnsiStyle(colorPath);
-      final title =
-          '['.withAnsiStyle(colorTitle) + path + ']'.withAnsiStyle(colorTitle);
+      final path = (rec?.code != null ? '${rec!.code}' : '').withAnsiStyle(colorPath);
+      final title = '['.withAnsiStyle(colorTitle) + path + ']'.withAnsiStyle(colorTitle);
       final m = message.toString();
       final mStyled = m.withAnsiStyle(style);
       final resultUnstyled = '$icon $m';
