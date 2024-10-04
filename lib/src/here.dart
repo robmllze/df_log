@@ -1,9 +1,11 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// Dart/Flutter (DF) Packages by DevCetra.com & contributors. Use of this
-// source code is governed by an MIT-style license that can be found in the
-// LICENSE file.
+// Dart/Flutter (DF) Packages by DevCetra.com & contributors. The use of this
+// source code is governed by an MIT-style license described in the LICENSE
+// file located in this project's root directory.
+//
+// See: https://opensource.org/license/mit
 //
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
@@ -74,11 +76,11 @@ class Here {
   factory Here([Symbol? group]) {
     final parts = Platform.instance.isWeb ? _hereWeb(2) : _here(2);
     return Here._(
-      parts?[0],
-      parts?[1],
-      parts?[2],
-      parts?[3],
-      group,
+      parts?[0] as String?,
+      parts?[1] as String?,
+      parts?[2] as int?,
+      parts?[3] as int?,
+      group as Symbol,
     );
   }
 
@@ -93,31 +95,31 @@ class Here {
   //
 
   /// ⚪️ Logs a message to the console.
-  void debugLog(e) => _rec.debugLog(e);
+  void debugLog(dynamic e) => _rec.debugLog(e);
 
   /// 🔴 Logs an error message to the console.
-  void debugLogError(e) => _rec.debugLogError(e);
+  void debugLogError(dynamic e) => _rec.debugLogError(e);
 
   /// 🟠 Logs an alert message to the console.
-  void debugLogAlert(e) => _rec.debugLogAlert(e);
+  void debugLogAlert(dynamic e) => _rec.debugLogAlert(e);
 
   /// 🟡 Logs an ignore message to the console.
-  void debugLogIgnore(e) => _rec.debugLogIgnore(e);
+  void debugLogIgnore(dynamic e) => _rec.debugLogIgnore(e);
 
   /// 🟢 Logs a success message to the console.
-  void debugLogSuccess(e) => _rec.debugLogSuccess(e);
+  void debugLogSuccess(dynamic e) => _rec.debugLogSuccess(e);
 
   /// 🟣 Logs an info message to the console.
-  void debugLogInfo(e) => _rec.debugLogInfo(e);
+  void debugLogInfo(dynamic e) => _rec.debugLogInfo(e);
 
   /// 🟤 Logs a debug message to the console.
-  void debugLogMessage(e) => _rec.debugLogMessage(e);
+  void debugLogMessage(dynamic e) => _rec.debugLogMessage(e);
 
   /// 🔵 Logs a start message to the console.
-  void debugLogStart(e) => _rec.debugLogStart(e);
+  void debugLogStart(dynamic e) => _rec.debugLogStart(e);
 
   /// ⚫ Logs a stop message to the console.
-  void debugLogStop(e) => _rec.debugLogStop(e);
+  void debugLogStop(dynamic e) => _rec.debugLogStop(e);
 
   //
   //
